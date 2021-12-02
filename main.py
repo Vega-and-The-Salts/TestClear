@@ -1,5 +1,8 @@
 import sys, os, time, pandas as pd, matplotlib as plt, numpy as np
 
+
+
+
 # Set of months that will be read
 months = {1 : ["January", "February", "March", "April", 50], 
 2 : ["February", "March", "April", "May", 60],
@@ -20,6 +23,9 @@ thirdMonth = pd.read_excel(f'{months[startMonth][2]}.xlsx')
 fourthMonth = pd.read_excel(f'{months[startMonth][3]}.xlsx')
 issuedGroup = pd.read_excel("Saved_Repo.xlsx")
 
+# Check to see if issuedGroup is populated
+if issuedGroup.empty:
+    pass
 # If issuedGroup is populated, find all names that are the same and drop rows
 
 # Iterate through all names and create new rows with total1 divided by actualTotal1 and total2 % actualTotal2
