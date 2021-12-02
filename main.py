@@ -11,12 +11,13 @@ months = {1 : ["January", "February", "March", "April"],
 8 : ["August", "September", "October", "November"]}
 
 
-startMonth = 1#int(input("Which iteration is this: "))
+startMonth = 1 #int(input("Which iteration is this: "))
 
 firstMonth = pd.read_excel(f'{months[startMonth][0]}.xlsx')
 secondMonth = pd.read_excel(f'{months[startMonth][1]}.xlsx')
 thirdMonth = pd.read_excel(f'{months[startMonth][2]}.xlsx')
 fourthMonth = pd.read_excel(f'{months[startMonth][3]}.xlsx')
+issuedGroup = pd.read_excel("Saved_Repo.xlsx")
 
 
 
