@@ -28,13 +28,17 @@ if issuedGroup.empty:
     pass
     # Look at each month and add the sum of all sum1+2+3 
     
-    # Divide the gathered information against actualTotal1 to get the Percentage
+    # Divide the gathered information against actualTotal1 to 
+    # get the Percentage by creating new column 
+        ## IF EVER INFORMATION IS OVER 100% CHECK INFORMATION
 
     # Look at each month and add the sum of all sum01+02+03
-    
-    # Divide the gathered information against actualTotal01 to get the Percentage
+        ## IF EVER INFORMATION IS OVER 100% CHECK INFORMATION
 
-    # If data falls below threshhold of startMonth[months][-1]
+    # Divide the gathered information against actualTotal01 to 
+    # get the Percentage by creating new column
+
+    # If data falls below threshhold of startMonth[months][-1] add 
 
     # Write information to Saved_Repo.xlsx
 
