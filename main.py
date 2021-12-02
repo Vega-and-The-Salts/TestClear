@@ -1,20 +1,22 @@
 import sys, os, time, pandas as pd, matplotlib as plt, numpy as np
-#"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
-months = {1 : ["January", "February", "March", "April", "May"],
-2 : ["February", "March", "April", "May", "June"],
-3 : ["March", "April", "May", "June", "July"],
-4 : ["April", "May", "June", "July", "August"],
-5 : ["May", "June", "July", "August", "September"],
-6 : ["June", "July", "August", "September", "October"],
-7 : ["July", "August", "September", "October", "November"],
-8 : ["August", "September", "October", "November", "December"]}
 
+## This is how we will work through with minimal user intervention to reduce error
+months = {1 : ["January", "February", "March", "April"], 
+2 : ["February", "March", "April", "May"],
+3 : ["March", "April", "May", "June"], 
+4 : ["April", "May", "June", "July"], 
+5 : ["May", "June", "July", "August"],
+6 : ["June", "July", "August", "September"], 
+7 : ["July", "August", "September", "October"], 
+8 : ["August", "September", "October", "November"]}
 
 
 startMonth = input("Which iteration is this: ")
 
-dataFirstMonth = pd.read_excel("AprilData.xlsx")
-
+firstMonth = pd.read_excel(f'{startMonth[0]}.xslx')
+secondMonth = pd.read_excel(f'{startMonth[1]}.xslx')
+thirdMonth = pd.read_excel(f'{startMonth[2]}.xslx')
+fourthMonth = pd.read_excel(f'{startMonth[3]}.xslx')
 
 
 
